@@ -1,1 +1,1 @@
-# 30d-fast-track
+# 30d
