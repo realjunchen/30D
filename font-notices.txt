@@ -1,0 +1,1 @@
+Playfair Display and Noto Sans TC: SIL OFL 1.1, see accompanying licenses. Life Edit TC Subset is a renamed web subset of Noto Sans TC; glyph designs unchanged, character coverage reduced for this page.
