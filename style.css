@@ -5,3 +5,21 @@
 @media(max-width:700px){.hero h1{font-size:clamp(30px,8vw,34px)}.hero h1 .gold{white-space:nowrap}.hero-english{font-size:54px;line-height:1.08}.hero-english em{white-space:nowrap}}
 
 .comparison-still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}.still-before{clip-path:inset(0 calc(100% - var(--split)) 0 0)}.video-stage canvas{position:relative;z-index:1;background:none}
+
+.stage-hint{margin:38px 0 0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;color:var(--navy)}
+.stage-hint strong{font-size:17px;font-weight:700}
+.stage-hint>span{font-size:13px;color:#53616c}
+.stage-tabs{gap:10px;margin-top:16px;border-bottom:0}
+.stage-tabs button{cursor:pointer;border:1px solid #0b1f3a33;border-radius:8px;background:#ffffff80;padding:18px 16px;min-height:96px;transition:background .18s,border-color .18s,color .18s}
+.stage-tabs button:hover{background:#e9e2d2;border-color:#987331}
+.stage-tabs button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.stage-tabs button[aria-selected=true]{background:var(--navy);color:var(--paper);border-color:var(--navy)}
+.stage-tabs button[aria-selected=true]:after{left:16px;right:16px;bottom:0}
+.stage-action{display:block;margin-top:10px;font-size:12px;font-weight:500;color:#70541b}
+.stage-action:before{content:'點選查看 ↓'}
+.stage-tabs button[aria-selected=true] .stage-action{color:var(--gold)}
+.stage-tabs button[aria-selected=true] .stage-action:before{content:'正在查看 ↓'}
+@media(max-width:700px){.stage-hint{gap:5px;margin-top:28px}.stage-hint strong{font-size:16px}.stage-hint>span{display:block;width:100%;font-size:13px}.stage-tabs{gap:7px;margin-top:15px}.stage-tabs button{padding:14px 5px;font-size:9px;min-height:102px}.stage-action{font-size:11px;margin-top:9px}.stage-tabs button[aria-selected=true]:after{left:7px;right:7px}}
+@media(max-width:700px){.hero h1{font-size:clamp(30px,8vw,34px)}.hero h1 .gold{white-space:nowrap}.hero-english{font-size:54px;line-height:1.08}.hero-english em{white-space:nowrap}}
+
+.comparison-still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}.still-before{clip-path:inset(0 calc(100% - var(--split)) 0 0)}.video-stage canvas{position:relative;z-index:1;background:none}
