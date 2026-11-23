@@ -95,10 +95,10 @@
           <figcaption class="vid-caption">內容與作品展示</figcaption>
         </figure>
       </section>
-<section class="section wrap" id="services"><span id="plans"></span><div class="eyebrow">CHOOSE YOUR PATH</div><h2>選擇你需要的協助，完成真正的改變。</h2><p class="intro">從你的生活與經驗出發，看看你現在需要的是一次實作指導、一套能自己練習的教材，還是 30 天的品牌內容系統陪跑。展開每張服務卡，可以看到進行方式和會開通的教材。</p><div class="currency"><span>顯示幣別</span><div class="switch"><button aria-pressed="true" class="active" id="twd" type="button">TWD 台幣</button><button aria-pressed="false" id="usd" type="button">USD 美元參考</button></div></div><div class="cards">
+<section class="section wrap" id="services"><span id="plans"></span><div class="eyebrow">CHOOSE YOUR PATH</div><h2>選擇你需要的協助，完成真正的改變。</h2><p class="intro">從你的生活與經驗出發，看看你現在需要的是一次實作指導、一套能自己練習的教材，還是 30 天的品牌內容系統陪跑。展開每張服務卡，可以看到進行方式和會開通的教材。</p><div class="cards">
 <article class="card" id="personal">
 <div class="number">01 / PERSONAL SESSION</div><h3>一對一實戰教練</h3>
-          <div class="price" data-twd="NT$2,980" data-usd="約 US$93">NT$2,980</div>
+          <div class="price">NT$2,980</div>
           <p class="desc">90 分鐘跟 Jun 一對一實作。用自己的生活片段，從取材到用 AI 剪輯，做出一支 4–7 秒的短片。</p>
           <details class="service-details">
             <summary>展開兩個開通模組</summary>
@@ -115,7 +115,7 @@
         </article>
 <article class="card featured" id="studio">
 <div class="number">02 / CREATOR FOUNDATIONS</div><h3>帶你學會內容創作</h3>
-          <div class="price" data-twd="NT$12,800" data-usd="約 US$400">NT$12,800</div>
+          <div class="price">NT$12,800</div>
           <p class="desc">想拍卻不知道怎麼取材，或一開口就卡住？從你眼前的問題挑一個模組，照自己的步調練。一次開通下列基礎教材。</p>
           <details class="service-details">
             <summary>查看包含的基礎模組</summary>
@@ -148,7 +148,7 @@
         </article>
 <article class="card" id="creator-os">
 <div class="number">03 / 30D CREATOR OS</div><h3>為你的品牌規劃內容</h3>
-          <div class="price" data-twd="NT$39,800" data-usd="約 US$1,244">NT$39,800</div>
+          <div class="price">NT$39,800</div>
           <p class="desc">如果你大致知道怎麼拍、怎麼發，現在想知道接下來該做什麼、怎麼把互動接成客戶對話，就從 30D 開始。你會開通下列內容系統模組，並和 Jun 用 30 天把流程跑一輪，做出能繼續用在自己帳號上的內容系統。</p>
           <details class="service-details">
             <summary>查看 30D 模組與一對一內容</summary>
@@ -218,5 +218,5 @@
 </section>
 <section class="wrap section" style="padding-top:0"><div class="eyebrow">HOW IT WORKS</div><h2>三步驟，開始執行。</h2><div class="steps"><div class="step"><div class="number">01</div><strong>選擇服務</strong><p>直接閱讀三個方案的工作內容、交付成果與雙方分工。</p></div><div class="step"><div class="number">02</div><strong>完成付款</strong><p>前往綠界結帳，確認付款選項並填寫正確 Email 與發票資料。</p></div><div class="step"><div class="number">03</div><strong>等候 Email 通知</strong><p>依 Email 通知開通教材。一對一方案會另收到預約與準備說明。</p></div></div></section>
 <section class="legal"><div class="wrap"><h2>購買須知</h2><p>購買時請務必填寫正確的電子郵件及發票寄送地址。付款完成後無需返回首頁，請耐心等候 Email 通知。數位內容及服務售出後，除依法得退款情形外，恕不接受退貨退款。無法接受者請勿下單。</p><p>服務啟動日期、改期與取消方式，依付款後提供的服務確認通知及依法適用的規定辦理。教材與社群權限依所選方案開通。流量、粉絲數及收入會隨內容與執行狀況而異。</p></div></section></main><footer class="footer wrap"><span>© 2026 LIFEDITSTUDIO · 生活製片廠</span><span>CONTENT · AI · GROWTH</span></footer>
-<script>const twd=document.getElementById('twd'),usd=document.getElementById('usd'),note=document.getElementById('currency-note');function setCurrency(mode){twd.classList.toggle('active',mode==='twd');usd.classList.toggle('active',mode==='usd');twd.setAttribute('aria-pressed',mode==='twd');usd.setAttribute('aria-pressed',mode==='usd');document.querySelectorAll('.price').forEach(el=>{el.textContent=el.dataset[mode]});note.textContent=mode==='usd'?'美元金額為以 NT$32／US$1 換算的參考值，非美元收款價格；點擊付款仍以綠界顯示的新台幣金額結帳。':'所有付款連結均以新台幣結帳。'}twd.addEventListener('click',()=>setCurrency('twd'));usd.addEventListener('click',()=>setCurrency('usd'));</script><script>(function(){const v=document.getElementById('ai-comparison-video');if(!v)return;v.muted=true;v.defaultMuted=true;const observer=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting&&e.intersectionRatio>=0.35){v.muted=true;const p=v.play();if(p&&typeof p.catch==='function')p.catch(()=>{});}else{v.pause();}}},{threshold:[0,0.35,0.6]});observer.observe(v);document.addEventListener('visibilitychange',()=>{if(document.hidden)v.pause();else if(v.getBoundingClientRect().top<innerHeight&&v.getBoundingClientRect().bottom>0){v.muted=true;v.play().catch(()=>{});}});})();</script></body></html>
+<script>(function(){const v=document.getElementById('ai-comparison-video');if(!v)return;v.muted=true;v.defaultMuted=true;const observer=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting&&e.intersectionRatio>=0.35){v.muted=true;const p=v.play();if(p&&typeof p.catch==='function')p.catch(()=>{});}else{v.pause();}}},{threshold:[0,0.35,0.6]});observer.observe(v);document.addEventListener('visibilitychange',()=>{if(document.hidden)v.pause();else if(v.getBoundingClientRect().top<innerHeight&&v.getBoundingClientRect().bottom>0){v.muted=true;v.play().catch(()=>{});}});})();</script></body></html>
 
