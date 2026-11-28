@@ -85,7 +85,7 @@
 .yellow-offer .offer-clock-row{border-top:1px solid #0b1f3a33;padding-top:10px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px}
 .yellow-offer .offer-clock-row strong{display:block;margin:0;font-size:19px;line-height:1.4;font-variant-numeric:tabular-nums;white-space:nowrap}
 @media(max-width:700px){.offer-bar-copy>span{font-size:12px}.offer-bar-copy small{font-size:10px;margin-left:5px}}
-</style></head><body><aside class="offer-bar" aria-label="Premium 黑五優惠倒數"><div class="offer-bar-inner"><a class="offer-bar-copy" href="#studio"><span id="promo-status">黑五特別優惠</span><small id="promo-deadline">12/5 起調價</small><strong id="promo-headline">NT$12,800 → 18,800</strong></a><div class="offer-bar-clock"><span id="promo-timer-label">優惠倒數</span><strong id="premium-countdown" role="timer">至 12/5 00:00</strong></div></div></aside>
+</style><style>.payment-options{display:grid;gap:8px}</style></head><body><aside class="offer-bar" aria-label="Premium 黑五優惠倒數"><div class="offer-bar-inner"><a class="offer-bar-copy" href="#studio"><span id="promo-status">黑五特別優惠</span><small id="promo-deadline">12/5 起調價</small><strong id="promo-headline">NT$12,800 → 18,800</strong></a><div class="offer-bar-clock"><span id="promo-timer-label">優惠倒數</span><strong id="premium-countdown" role="timer">至 12/5 00:00</strong></div></div></aside>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute">
     <filter id="brand-background" color-interpolation-filters="sRGB">
       <feComponentTransfer>
@@ -154,7 +154,7 @@
 <li><strong>品牌門面與信任素材</strong>｜整理作品和案例，讓人知道你能幫什麼。</li>
 <li><strong>工具設定</strong>｜查找課程會用到的工具與操作步驟。</li>
 </ul></div></details>
-<div class="actions"><p class="note">付款方式請先於生活製片廠社群聯絡 Jun 確認。</p><a class="btn" href="https://www.skool.com/the-life-edit-studio-2311"><span>聯絡 Jun 確認付款方式</span></a></div>
+<div class="actions"><div id="premium-payment" class="payment-options"><a class="btn" href="https://p.ecpay.com.tw/0B90011"><span>信用卡、ATM／網銀、Apple Pay</span></a><a class="btn" href="https://p.ecpay.com.tw/138CB7B"><span>信用卡分期 3、6 期／無卡分期</span></a></div><a class="btn" id="premium-contact" hidden href="https://www.skool.com/the-life-edit-studio-2311"><span>聯絡 Jun 確認付款方式</span></a></div>
 </article>
 <article class="card" id="creator-os">
 <div class="number">把經驗累積成自己的數位資產</div><h3>VIP</h3><p class="plan-label">30D 內容系統與一對一指導</p>
@@ -170,7 +170,7 @@
 <p><strong>一對一服務安排｜30 天</strong></p><ol><li>看帳號與作品，選出這個月先解決的問題。</li><li>你動手拍攝與發布，Jun 依進度提供腳本、剪輯或作品建議。</li><li>回顧實際結果，整理接下來可以持續做的內容與步驟。</li></ol><p>剛開始經營也可以，會依你的程度安排起步。會談與回饋的安排，依付款後的服務確認通知。</p></div></details>
 <div class="actions"><a class="btn" href="https://p.ecpay.com.tw/44DDD11"><span>信用卡、ATM／網銀、Apple Pay</span></a><a class="btn" href="https://p.ecpay.com.tw/99CA6A8"><span>信用卡分期 3、6、12 期</span></a></div>
 </article>
-</div><p class="footnote" id="currency-note">本頁方案以新台幣定價。Premium 請先聯絡 Jun 確認付款方式；其他付款方式請見各方案按鈕。</p></section>
+</div><p class="footnote" id="currency-note">本頁方案以新台幣定價，付款方式請見各方案按鈕。</p></section>
 <section class="section wrap" id="faq" aria-labelledby="faq-title">
   <div class="eyebrow">FAQ</div>
   <h2 id="faq-title">常見問題</h2>
@@ -204,7 +204,7 @@
   </details>
   <details>
     <summary>可以分期嗎？</summary>
-    <p>Premium 的付款與分期方式請先聯絡 Jun 確認。VIP 可用信用卡分 3 期、6 期或 12 期，請從方案分期按鈕進入，以綠界結帳頁顯示為準。</p>
+    <p>Premium 黑五優惠 NT$12,800 可用信用卡分 3 期、6 期或無卡分期。VIP 可用信用卡分 3 期、6 期或 12 期，請從方案分期按鈕進入，以綠界結帳頁顯示為準。12/5 調價後的付款方式請依方案按鈕確認。</p>
   </details>
   <details>
     <summary>付款後可以退款嗎？</summary>
@@ -222,6 +222,8 @@ function render(now){
  document.querySelectorAll('.premium-schedule').forEach(el=>{el.textContent=expired?'現行價格 NT$18,800。':'優惠至 12/4 23:59（台灣時間）；12/5 起 NT$18,800。';});
  document.querySelectorAll('.standard-current-price').forEach(el=>{el.textContent=expired?'NT$6,800':'NT$2,980';});
  document.querySelectorAll('.standard-schedule').forEach(el=>{el.textContent=expired?'三個啟動模組＋一次 90 分鐘一對一。':'12/5 起 NT$6,800｜三個啟動模組＋一次 90 分鐘一對一';});
+ document.getElementById('premium-payment').hidden=expired;
+ document.getElementById('premium-contact').hidden=!expired;
  document.getElementById('standard-payment').hidden=expired;
  document.getElementById('standard-contact').hidden=!expired;
  document.getElementById('promo-status').textContent=expired?'Premium 內容創作實戰':'黑五特別優惠';
