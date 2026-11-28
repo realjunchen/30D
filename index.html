@@ -109,7 +109,23 @@
 }
 @media(min-width:781px) and (max-width:1050px){.offer-price-row{flex-wrap:wrap}.offer-next-price{text-align:left}.yellow-offer .offer-clock-row{flex-wrap:wrap}}
 @media(max-width:360px){.yellow-offer .price{font-size:28px}.offer-next-price strong{font-size:22px}.yellow-offer .offer-clock-row strong{font-size:23px}}
-</style></head><body><aside class="offer-bar" aria-label="Premium 黑五優惠倒數"><div class="offer-bar-inner"><a class="offer-bar-copy" href="#studio"><span id="promo-status">黑五特別優惠</span><small id="promo-deadline">12/5 起調價</small><strong id="promo-headline">NT$12,800 → 18,800</strong></a><div class="offer-bar-clock"><span id="promo-timer-label">優惠倒數</span><strong id="premium-countdown" role="timer">至 12/5 00:00</strong></div></div></aside>
+</style><style>
+.offer-bar{height:64px;max-height:64px;background:#f4cf45}
+.offer-bar-inner{height:64px;display:grid;grid-template-columns:minmax(0,1fr) max-content;grid-template-rows:30px 20px;gap:0 12px;padding:7px 20px;color:#0b1f3a}
+.offer-bar-inner>#promo-status{font-size:13px;font-weight:800;line-height:20px;align-self:center}
+.offer-bar-clock{display:block;background:transparent;color:#0b1f3a;border:0;border-radius:0;box-shadow:none;padding:0;margin:0;text-align:right}
+.offer-bar-clock strong{font-size:27px;line-height:30px;font-weight:900}
+.offer-bar-inner>#promo-deadline{font-size:12px;line-height:20px;white-space:nowrap}
+.offer-bar-inner>#promo-headline{font-size:17px;line-height:20px;font-weight:800;white-space:nowrap;text-align:right;letter-spacing:-.03em}
+.timer-sr-label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.yellow-offer .offer-clock-row{display:block;background:transparent;color:#0b1f3a;border:0;border-radius:0;box-shadow:none;padding:10px 0 12px;margin:0}
+.yellow-offer .offer-clock-row>span{display:block;font-size:12px;line-height:18px}
+.yellow-offer .offer-clock-row strong{display:block;font-size:34px;line-height:1.2;font-weight:900;letter-spacing:-.03em;margin:3px 0 0}
+.yellow-offer .offer-price-row{border-top:1px solid #0b1f3a33;padding-top:12px;margin-top:0}
+.yellow-offer .premium-schedule,.yellow-offer .standard-schedule{font-size:12px;line-height:1.6;margin:10px 0 0}
+@media(max-width:700px){.offer-bar-inner{padding:7px 12px;column-gap:8px}.offer-bar-inner>#promo-status{font-size:12px}.offer-bar-clock strong{font-size:clamp(22px,6.2vw,27px)}.offer-bar-inner>#promo-headline{font-size:clamp(13px,3.8vw,17px)}.offer-bar-inner>#promo-deadline{font-size:11px}}
+@media(min-width:781px) and (max-width:1050px){.yellow-offer .offer-clock-row strong{font-size:28px}}
+</style></head><body><aside class="offer-bar" aria-label="Premium 黑五優惠倒數"><a class="offer-bar-inner" href="#studio"><span id="promo-status">黑五特別優惠</span><div class="offer-bar-clock"><span id="promo-timer-label" class="timer-sr-label">優惠倒數</span><strong id="premium-countdown" role="timer">至 12/5 00:00</strong></div><small id="promo-deadline">12 月 5 日調整</small><strong id="promo-headline">NT$12,800 → NT$18,800</strong></a></aside>
 <svg width="0" height="0" aria-hidden="true" style="position:absolute">
     <filter id="brand-background" color-interpolation-filters="sRGB">
       <feComponentTransfer>
@@ -152,7 +168,7 @@
 <section class="section wrap" id="services"><span id="plans"></span><div class="eyebrow">課程與服務</div><h2>你會拿到什麼</h2><p class="intro">Standard 是你的啟動包：三個啟動模組，加上一次 90 分鐘一對一協助起步。Premium 帶你練完整內容技能。VIP 透過完整 30D 架構與一對一指導，建立自己的內容系統、數位資產與商品。</p><div class="cards">
 <article class="card" id="personal">
 <div class="number">從生活素材開始的啟動包</div><h3>Standard</h3><p class="plan-label">三個啟動模組＋一次 90 分鐘一對一</p>
-<div class="yellow-offer standard-offer"><span class="offer-name" id="standard-offer-label">黑五特別優惠</span><div class="offer-price-row"><div><span class="offer-price-label">目前優惠價</span><div class="price standard-current-price">NT$2,980</div></div><div class="offer-next-price"><span class="offer-price-label">12/5 起</span><strong>NT$6,880</strong></div></div><p class="standard-schedule">12/5 起 NT$6,880｜三個啟動模組＋一次 90 分鐘一對一</p><div class="offer-clock-row"><span id="standard-timer-label">優惠倒數</span><strong id="standard-countdown" role="timer">至 12/5 00:00（台灣時間）</strong></div></div>
+<div class="yellow-offer standard-offer"><span class="offer-name" id="standard-offer-label">黑五特別優惠</span><div class="offer-clock-row"><span id="standard-timer-label">優惠倒數</span><strong id="standard-countdown" role="timer">至 12/5 00:00（台灣時間）</strong></div><div class="offer-price-row"><div><span class="offer-price-label">目前優惠價</span><div class="price standard-current-price">NT$2,980</div></div><div class="offer-next-price"><span class="offer-price-label">調整後價格</span><strong>NT$6,880</strong></div></div><p class="standard-schedule">12/5 起 NT$6,880｜三個啟動模組＋一次 90 分鐘一對一</p></div>
 <p class="desc">買杯咖啡、走路、打開電腦，都是可以分享的生活素材。不用先寫完整腳本，也不用露臉，跟著三個模組，練生活取材、AI 剪輯與創作工具，再帶著自己的素材和問題，透過一次 90 分鐘一對一協助起步。</p>
 <div class="plan-includes"><h4>你會拿到</h4><ul><li>三個啟動模組：「從這裡開始」學生活碎片取材與帳號起步；「AI 剪輯」練整理素材與剪片；「創作者工具」提供 AI 工具、內容資料庫與參考資源。</li><li>生活製片廠社群使用權限。</li><li>另含一次 90 分鐘一對一實作，帶著素材和問題，讓 Jun 協助你起步。</li><li>創作者工具 Creator Toolkit：GitHub 使用、AI 工具操作、LLM Council 設定，以及內容創作資料庫與參考資源。</li><li>數位資產包內的 12 套可轉售數位商品，更新內容、換上自己的品牌後使用；售價與使用方式依各商品授權說明。</li><li>已開通模組的內容更新、社群發文提問，以及對會員開放的直播與線上 Q&amp;A；場次依社群公告。</li></ul><h4>Jun 會怎麼幫你</h4><p>一起找能分享的題材、安排畫面，示範怎麼用 AI 整理與剪輯你的素材。</p></div>
 <details class="service-details"><summary>看三個模組教什麼</summary><div class="details-copy"><ul><li><strong>從這裡開始</strong>｜設定帳號、寫自我介紹，從生活找素材，準備第一篇貼文。</li><li><strong>AI 剪輯</strong>｜設定 Claude 或 ChatGPT／Codex，跟著步驟整理素材、剪輯影片。</li><li><strong>創作者工具 Creator Toolkit</strong>｜學習 GitHub 與 AI 工具的使用方式、設定 LLM Council，並查找內容創作資料庫與參考資料，製作內容時有工具可用、有資源可查。</li></ul></div></details>
@@ -160,7 +176,7 @@
 </article>
 <article class="card featured" id="studio">
 <div class="number">把內容創作的技能練起來</div><h3>Premium</h3><p class="plan-label">內容創作實戰與社群</p>
-<div class="yellow-offer premium-offer"><span class="offer-name" id="premium-offer-label">黑五特別優惠</span><div class="offer-price-row"><div><span class="offer-price-label">目前優惠價</span><div class="price premium-current-price">NT$12,800</div></div><div class="offer-next-price"><span class="offer-price-label">12/5 起</span><strong>NT$18,800</strong></div></div><p class="premium-schedule">優惠至 12/4 23:59（台灣時間）；12/5 起 NT$18,800。</p><div class="offer-clock-row"><span id="premium-card-timer-label">優惠倒數</span><strong id="premium-card-countdown" role="timer">至 12/5 00:00（台灣時間）</strong></div></div>
+<div class="yellow-offer premium-offer"><span class="offer-name" id="premium-offer-label">黑五特別優惠</span><div class="offer-clock-row"><span id="premium-card-timer-label">優惠倒數</span><strong id="premium-card-countdown" role="timer">至 12/5 00:00（台灣時間）</strong></div><div class="offer-price-row"><div><span class="offer-price-label">目前優惠價</span><div class="price premium-current-price">NT$12,800</div></div><div class="offer-next-price"><span class="offer-price-label">調整後價格</span><strong>NT$18,800</strong></div></div><p class="premium-schedule">優惠至 12/4 23:59（台灣時間）；12/5 起 NT$18,800。</p></div>
 <p class="desc">加入生活製片廠，開通下列教學。從找題材、練口播、手機拍攝到 AI 剪輯，照自己的時間學。</p>
 <div class="plan-includes"><h4>你會拿到</h4><ul><li>生活製片廠社群使用權限。</li><li>下方列出的 13 個教學模組，從選題、表達、拍攝，到輪播、限動與自動回覆。</li><li>已開通模組的內容更新、社群發文提問，以及對會員開放的直播與線上 Q&amp;A；場次依社群公告。</li></ul><h4>Jun 提供什麼</h4><p>把我實際使用的方法、步驟與範例整理成教材，讓你用自己的題材練習。遇到卡點可以在社群發文提問，也能參加對會員開放的線上 Q&amp;A。</p></div>
 <details class="service-details"><summary>查看全部 13 個教學模組</summary><div class="details-copy"><ul>
@@ -245,9 +261,9 @@ function render(now){
  document.querySelectorAll('.offer-next-price').forEach(el=>{el.hidden=expired;});
  document.querySelectorAll('.offer-price-label').forEach(el=>{if(!el.closest('.offer-next-price'))el.textContent=expired?'現行價格':'目前優惠價';});
  document.querySelectorAll('.premium-current-price').forEach(el=>{el.textContent=expired?'NT$18,800':'NT$12,800';});
- document.querySelectorAll('.premium-schedule').forEach(el=>{el.textContent=expired?'現行價格 NT$18,800。':'優惠至 12/4 23:59（台灣時間）；12/5 起 NT$18,800。';});
+ document.querySelectorAll('.premium-schedule').forEach(el=>{el.textContent=expired?'現行價格 NT$18,800。':'12 月 5 日調整：NT$12,800 → NT$18,800（台灣時間）';});
  document.querySelectorAll('.standard-current-price').forEach(el=>{el.textContent=expired?'NT$6,880':'NT$2,980';});
- document.querySelectorAll('.standard-schedule').forEach(el=>{el.textContent=expired?'三個啟動模組＋一次 90 分鐘一對一。':'12/5 起 NT$6,880｜三個啟動模組＋一次 90 分鐘一對一';});
+ document.querySelectorAll('.standard-schedule').forEach(el=>{el.textContent=expired?'三個啟動模組＋一次 90 分鐘一對一。':'12 月 5 日調整：NT$2,980 → NT$6,880（台灣時間）';});
  document.getElementById('premium-general').setAttribute('href',expired?'https://p.ecpay.com.tw/20E758A':'https://p.ecpay.com.tw/0B90011');
  document.getElementById('premium-installments').setAttribute('href',expired?'https://p.ecpay.com.tw/7570EFD':'https://p.ecpay.com.tw/138CB7B');
  const standardPayment=document.getElementById('standard-payment');
@@ -255,8 +271,8 @@ function render(now){
  standardPayment.querySelector('span').textContent=expired?'信用卡、ATM／網銀、Apple Pay':'ATM／網銀、Apple Pay';
  document.getElementById('promo-status').textContent=expired?'Premium 內容創作實戰':'黑五特別優惠';
  document.getElementById('premium-offer-label').textContent=expired?'內容創作實戰':'黑五特別優惠';
- document.getElementById('promo-headline').textContent=expired?'Premium NT$18,800':'NT$12,800 → 18,800';
- document.getElementById('promo-deadline').textContent=expired?'Premium · US$597':'12/5 起調價';
+ document.getElementById('promo-headline').textContent=expired?'Premium NT$18,800':'NT$12,800 → NT$18,800';
+ document.getElementById('promo-deadline').textContent=expired?'Premium · US$597':'12 月 5 日調整';
  document.getElementById('promo-timer-label').textContent=expired?'優惠已結束':'優惠倒數';
  document.getElementById('standard-timer-label').textContent=expired?'優惠已結束':'優惠倒數';
  document.getElementById('standard-offer-label').textContent=expired?'啟動包':'黑五特別優惠';
