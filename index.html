@@ -172,7 +172,7 @@
 <p class="desc">買杯咖啡、走路、打開電腦，都是可以分享的生活素材。不用先寫完整腳本，也不用露臉，跟著生活製造啟動包，練生活取材、AI 剪輯與創作工具，再帶著自己的素材和問題，透過一次 90 分鐘一對一協助起步。</p>
 <div class="plan-includes"><h4>你會拿到</h4><ul><li>生活製造啟動包包含：「從這裡開始」學生活碎片取材與帳號起步；「AI 剪輯」練整理素材與剪片；「創作者工具」提供 AI 工具、內容資料庫與參考資源。</li><li>生活製片廠社群使用權限。</li><li>另含一次 90 分鐘一對一實作，帶著素材和問題，讓 Jun 協助你起步。</li><li>創作者工具 Creator Toolkit：GitHub 使用、AI 工具操作、LLM Council 設定，以及內容創作資料庫與參考資源。</li><li>數位資產包內的 12 套可轉售數位商品，更新內容、換上自己的品牌後使用；售價與使用方式依各商品授權說明。</li><li>已開通模組的內容更新、社群發文提問，以及對會員開放的直播與線上 Q&amp;A；場次依社群公告。</li></ul><h4>Jun 會怎麼幫你</h4><p>一起找能分享的題材、安排畫面，示範怎麼用 AI 整理與剪輯你的素材。</p></div>
 <details class="service-details"><summary>看生活製造啟動包教什麼</summary><div class="details-copy"><ul><li><strong>從這裡開始</strong>｜設定帳號、寫自我介紹，從生活找素材，準備第一篇貼文。</li><li><strong>AI 剪輯</strong>｜設定 Claude 或 ChatGPT／Codex，跟著步驟整理素材、剪輯影片。</li><li><strong>創作者工具 Creator Toolkit</strong>｜學習 GitHub 與 AI 工具的使用方式、設定 LLM Council，並查找內容創作資料庫與參考資料，製作內容時有工具可用、有資源可查。</li></ul></div></details>
-<div class="actions"><a class="btn" id="standard-payment" href="https://p.ecpay.com.tw/9B0D18A"><span>ATM／網銀、Apple Pay</span></a></div>
+<div class="actions"><a class="btn" id="standard-payment" href="https://p.ecpay.com.tw/9B0D18A"><span>信用卡、ATM／網銀、Apple Pay</span></a></div>
 </article>
 <article class="card featured" id="studio">
 <div class="number">把內容創作的技能練起來</div><h3>Premium</h3><p class="plan-label">內容創作實戰與社群</p>
@@ -268,7 +268,7 @@ function render(now){
  document.getElementById('premium-installments').setAttribute('href',expired?'https://p.ecpay.com.tw/7570EFD':'https://p.ecpay.com.tw/138CB7B');
  const standardPayment=document.getElementById('standard-payment');
  standardPayment.setAttribute('href',expired?'https://p.ecpay.com.tw/5280313':'https://p.ecpay.com.tw/9B0D18A');
- standardPayment.querySelector('span').textContent=expired?'信用卡、ATM／網銀、Apple Pay':'ATM／網銀、Apple Pay';
+ standardPayment.querySelector('span').textContent='信用卡、ATM／網銀、Apple Pay';
  document.getElementById('promo-status').textContent=expired?'Premium 內容創作實戰':'黑五特別優惠';
  document.getElementById('premium-offer-label').textContent=expired?'內容創作實戰':'黑五特別優惠';
  document.getElementById('promo-headline').textContent=expired?'Premium NT$18,800':'NT$12,800 → NT$18,800';
